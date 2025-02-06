@@ -10334,12 +10334,10 @@ h1.page-title + .tag-cloud-list {
 }
 #post-comment .comment-head .comment-switch {
   display: inline-block;
-  float: right;
-  margin: 2px auto 0;
-  padding: 4px 16px;
-  width: max-content;
-  border-radius: 8px;
-  background: #f6f8fa;
+  vertical-align: middle;
+}
+#post-comment .comment-head .comment-switch > span {
+  display: none;
 }
 #post-comment .comment-head .comment-switch .first-comment {
   color: #425aef;
@@ -10887,6 +10885,12 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: 0.6s;
   transition: 0.6s;
   overflow: hidden;
+  -webkit-animation: header 5s linear forwards;
+  -moz-animation: header 5s linear forwards;
+  -o-animation: header 5s linear forwards;
+  -ms-animation: header 5s linear forwards;
+  animation: header 5s linear forwards;
+  animation-timeline: view();
   background-color: transparent;
 }
 #page-header.post-bg #nav {
@@ -19340,9 +19344,6 @@ p.p.gray {
   background: var(--anzhiyu-card-bg);
   -webkit-box-shadow: none;
   box-shadow: none;
-}
-[data-theme='dark'] #post-comment .comment-switch {
-  background: #2c2c2c !important;
 }
 [data-theme='dark'] #post-comment .comment-switch #switch-btn {
   filter: brightness(0.8);
